@@ -1,0 +1,16 @@
+.menu {
+    display: flex;
+    list-style: none;
+    li a {
+        padding: 20px;
+        text-decoration: none;
+        background-color: darkgreen;
+        color: white;
+        display: inline-block;
+    }
+}
+
+.active {
+    background-color: deeppink;
+    color: black;
+}

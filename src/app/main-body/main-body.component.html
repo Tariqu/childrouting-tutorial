@@ -1,0 +1,12 @@
+<br><br>
+<!-- // template reference variable -->
+<input type="text" #inpval /><br><br>
+<button (click)="addTodo(inpval.value); inpval.value = ''">ADD TODO</button>
+<br>
+<br>
+<ul>
+    <li *ngFor="let val of appService.todos; let i = index">
+        <span>{{val}}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span (click)="removeTodos(i)">X</span>
+    </li>
+</ul>
