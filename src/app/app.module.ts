@@ -9,6 +9,7 @@ import { PostsComponent } from './posts/posts.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppRoutingModule } from './app.routing';
 import { LoginComponent } from './login/login.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { LoginComponent } from './login/login.component';
     DashboardComponent,
     LoginComponent,
   ],
-  imports: [AppRoutingModule, BrowserModule],
+  imports: [AppRoutingModule, BrowserModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
